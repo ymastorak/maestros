@@ -27,6 +27,7 @@ import java.util.Map;
 @RestController
 @Validated
 @RequestMapping("/maestros/api/v1")
+@CrossOrigin // TODO should limit only to localhost
 @RequiredArgsConstructor
 @Transactional(Transactional.TxType.REQUIRED)
 public class MainController {
